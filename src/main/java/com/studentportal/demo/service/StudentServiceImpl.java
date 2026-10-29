@@ -16,8 +16,8 @@ public class StudentServiceImpl implements StudentService {
 
     // Create multiple students
     @Override
-    public List<Student> createStudents(List<Student> students) {
-        return studentRepo.saveAll(students);
+    public Student createStudents(Student students) {
+        return studentRepo.save(students);
     }
 
     @Override

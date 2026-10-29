@@ -31,7 +31,7 @@ public class StudentController {
 
     // Create multiple students
     @PostMapping("/createStudent")
-    public List<Student> createStudent(@RequestBody List<Student> students) {
+    public Student createStudent(@RequestBody Student students) {
         return studentService.createStudents(students);
     }
 

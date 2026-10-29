@@ -5,7 +5,7 @@ import com.studentportal.demo.model.Student;
 
 public interface StudentService {
 
-    List<Student> createStudents(List<Student> students);
+    Student createStudents(Student students);
 
     List<Student> getAllStudents();
 
